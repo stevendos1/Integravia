@@ -35,8 +35,8 @@ public class PersonController {
     }
 
     @CrossOrigin(origins = "*") // Habilita CORS solo para esta ruta
-    @GetMapping("/buscar")
-    public void buscar(@RequestParam String correo, @RequestParam String password) {
+    @GetMapping("/logIn")
+    public void logIn(@RequestParam String correo, @RequestParam String password) {
 
         service.buscar(correo, password);
     }
